@@ -1,0 +1,24 @@
+# Verifica i branch esistenti
+git branch
+
+# Crea un nuovo branch e passa a esso
+git checkout -b bug-fix-typo
+
+# Fai modifiche, aggiungi i file e fai il commit
+git add README.md
+git commit -m "Fixed typo in README.md"
+
+# Pusha il branch al repository remoto
+git push origin bug-fix-typo
+
+# Torna al branch main
+git checkout main
+
+# Unisci il branch bug-fix-typo al branch main
+git merge bug-fix-typo
+
+# Elimina il branch locale se non serve più
+git branch -d bug-fix-typo
+
+# Elimina il branch remoto se non serve più
+git push origin --delete bug-fix-typo
